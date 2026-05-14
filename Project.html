@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tejaswini</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="projects.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #0c0c0c;
+            color: white;
+        }
+
+        /* MAIN */
+        .main {
+            width: 90%;
+            margin: 40px auto;
+        }
+
+        /* TITLE */
+        h1 {
+            font-size: 50px;
+        }
+
+        h1 span {
+            color: orange;
+        }
+
+        /* PROJECT CARD */
+        .project-card {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #111;
+            border: 1px solid orange;
+            border-radius: 20px;
+            padding: 30px;
+            margin-top: 20px;
+            gap: 30px;
+        }
+
+        /* TEXT */
+        .project-text {
+            width: 55%;
+        }
+
+        .project-text h2 {
+            color: orange;
+        }
+
+        .project-text p {
+            color: #bbb;
+        }
+
+        .project-text ul {
+            padding-left: 20px;
+        }
+
+        .project-text li {
+            margin: 6px 0;
+        }
+
+        /* IMAGE */
+        .project-img {
+            width: 45%;
+            text-align: center;
+        }
+
+        .project-img img {
+            width: 100%;
+            max-width: 450px;
+            border-radius: 15px;
+            border: 2px solid #222;
+            transition: 0.3s;
+        }
+
+        /* HOVER EFFECT */
+        .project-img img:hover {
+            transform: scale(1.05);
+        }
+
+        /* BUTTONS */
+        .project-buttons {
+            margin-top: 15px;
+            display: flex;
+            gap: 15px;
+        }
+
+        .btn {
+            padding: 10px 18px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn.primary {
+            background: orange;
+            color: black;
+        }
+
+        .btn.secondary {
+            border: 1px solid orange;
+            color: orange;
+        }
+
+        .btn.secondary:hover {
+            background: orange;
+            color: black;
+        }
+
+        /* TECH STACK (FIXED CLEAN UI) */
+        .tech-stack {
+            margin-top: 20px;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .tech-stack span {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background: #1a1a1a;
+            padding: 6px 12px;
+            border-radius: 15px;
+            font-size: 13px;
+            border: 1px solid #333;
+        }
+
+        /* ICON SIZE */
+        .tech-stack i {
+            font-size: 16px;
+        }
+
+        /*📱 Tablet (≤ 992px) */
+        @media (max-width: 992px) {
+
+        .project-card {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .project-text,
+        .project-img {
+            width: 100%;
+        }
+
+        .project-text h2 {
+            font-size: 22px;
+        }
+
+        .project-text p {
+            font-size: 15px;
+        }
+
+        .project-buttons {
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        h1 {
+            font-size: 36px;
+            text-align: center;
+        }
+        }
+
+        /*📱 Mobile (≤ 600px) */
+        @media (max-width: 600px) {
+
+        .main {
+            width: 95%;
+            margin: 20px auto;
+        }
+
+        h1 {
+            font-size: 28px;
+        }
+
+        .project-card {
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .project-text h2 {
+            font-size: 20px;
+        }
+
+        .project-text p {
+            font-size: 14px;
+        }
+
+        .project-text li {
+            font-size: 14px;
+        }
+
+        .btn {
+            width: 100%;
+            text-align: center;
+        }
+
+        .project-buttons {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .project-img img {
+            max-width: 100%;
+        }
+
+        .tech-stack {
+            justify-content: center;
+        }
+
+        .tech-stack span {
+            font-size: 12px;
+            padding: 5px 10px;
+        }
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="main">
+
+        <h1>Portfolio <span>Projects</span></h1>
+
+        <!-- PROJECT CARD -->
+        <div class="project-card">
+
+             <!-- LEFT -->
+             <div class="project-text">
+
+            
+                <h2>E-Voting System</h2>
+
+                <p>
+                    Developed a secure role-based web application using Java (JSP, Servlets), JDBC, MySQL, and GlassFish Server. Implemented user authentication, admin approval workflow, and vote validation to ensure data integrity and prevent duplicate voting.
+                </p>
+
+                <ul>
+                    <li>✔ User Registration & Login with backend validation</li>
+                    <li>✔ Admin Login & Voter Approval mechanism</li>
+                    <li>✔ Secure vote casting with duplicate vote prevention</li>
+                    <li>✔ Session management for authenticated access</li>
+                    <li>✔ Dynamic candidate display</li>
+                    <li>✔ Real-time vote count</li>
+                </ul>
+
+                <!-- DEMO LOGIN -->
+                <p style="margin-top:15px; color:#ddd; line-height:1.7;">
+                    <strong style="color:orange;">Demo User:</strong><br>
+                    Email: radha@gmail.com | Password: radha
+                    <br><br>
+
+                    <strong style="color:orange;">Admin Login:</strong><br>
+                    Username: Admin_Teju | Password: Admin_Teju
+                </p>
+
+                <!-- BUTTONS -->
+                <div class="project-buttons">
+                    <a href="#" class="btn primary">Live Demo</a>
+                    <a href="https://github.com/TejaswiniDeveloper/E-Voting-System" class="btn secondary">GitHub</a>
+                </div>
+
+                <!-- USED LANG -->
+                <div class="tech-stack">
+                    <span><i class="fa-brands fa-html5"></i> HTML</span>
+                    <span><i class="fa-brands fa-css3-alt"></i> CSS</span>
+                    <span><i class="fa-brands fa-js"></i> JavaScript</span>
+                    <span><i class="fa-brands fa-java"></i> Java</span>
+                    <span>JSP</span>
+                    <span>Servlets</span>
+                    <span>JDBC</span>
+                    <span><i class="fa-solid fa-database"></i> MySQL</span>
+                    <span>GlassFish</span>
+                </div>
+
+            </div>
+
+            <!-- RIGHT IMAGE -->
+            <div class="project-img">
+                <img src="E-voting system.png" alt="">
+            </div>
+        </div>
+
+
+        <!-- AMAZON CLONE PROJECT -->
+        <div class="project-card reverse">
+
+            <!-- IMAGE LEFT -->
+            <div class="project-img">
+                <img src="Amazon Clone.png" alt="Amazon Clone">
+            </div>
+
+            <!-- TEXT RIGHT -->
+            <div class="project-text">
+
+                <h2>Amazon Clone</h2>
+
+                <p>
+                    Built a responsive Amazon clone using HTML, CSS, and JavaScript.
+                    This project replicates the UI and layout of the Amazon homepage
+                    focusing on real-world design structure.
+                </p>
+
+                <ul>
+                    <li>✔ Fully responsive design</li>
+                    <li>✔ Amazon-style navigation bar</li>
+                    <li>✔ Product sections & banners</li>
+                    <li>✔ Search bar UI</li>
+                    <li>✔ Clean and structured layout</li>
+                </ul>
+
+                <!-- BUTTONS -->
+                <div class="project-buttons">
+                    <!--<a href="https://amazon-clone-o9k6.onrender.com" class="btn primary">Live Demo</a>-->
+                    <a href="https://amazon-clone-mu-brown.vercel.app/" class="btn primary">Live Demo</a>
+                    <a href="https://github.com/TejaswiniDeveloper/Amazon-Clone" class="btn secondary">GitHub</a>
+                </div>
+
+                <!-- TECH STACK -->
+                <div class="tech-stack">
+                    <span><i class="fa-brands fa-html5"></i> HTML</span>
+                    <span><i class="fa-brands fa-css3-alt"></i> CSS</span>
+                    <span><i class="fa-brands fa-js"></i> JavaScript</span>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- TIC TAC TOE PROJECT -->
+        <div class="project-card">
+
+            <!-- TEXT -->
+            <div class="project-text">
+
+                <h2>Tic Tac Toe</h2>
+
+                <p>
+                    Developed an interactive Tic Tac Toe game using JavaScript with real-time UI updates and win detection logic.
+                </p>
+
+                <ul>
+                    <li>✔ Two-player gameplay</li>
+                    <li>✔ Win & draw detection</li>
+                    <li>✔ Dynamic UI updates</li>
+                    <li>✔ Reset game functionality</li>
+                    <li>✔ Responsive design</li>
+                </ul>
+
+                <!-- BUTTONS -->
+                <div class="project-buttons">
+                    <!-- <a href="https://tic-tac-toe-xb3n.onrender.com" class="btn primary">Live Demo</a> -->
+                    <a href="https://tic-tac-toe-delta-sand.vercel.app/" class="btn primary">Live Demo</a>
+                    <a href="https://github.com/TejaswiniDeveloper/Tic-Tac-Toe" class="btn secondary">GitHub</a>
+                </div>
+
+                <!-- TECH STACK -->
+                <div class="tech-stack">
+                    <span><i class="fa-brands fa-html5"></i> HTML</span>
+                    <span><i class="fa-brands fa-css3-alt"></i> CSS</span>
+                    <span><i class="fa-brands fa-js"></i> JavaScript</span>
+                </div>
+            </div>
+
+            <!-- IMAGE -->
+            <div class="project-img">
+                <img src="Tic Tac Toe.png" alt="Tic Tac Toe">
+            </div>
+        </div>
+        
+
+        <!-- ROCK PAPER SCISSORS PROJECT -->
+        <div class="project-card reverse">
+
+            <!-- IMAGE -->
+            <div class="project-img">
+                <img src="Rock Paper Scissors.png" alt="Rock Paper Scissors">
+            </div>
+
+            <!-- TEXT -->
+            <div class="project-text">
+
+                <h2>Rock Paper Scissors</h2>
+
+                <p>
+                    Built a Rock Paper Scissors game using JavaScript with random computer logic and score tracking system.
+                </p>
+
+                <ul>
+                    <li>✔ User vs Computer gameplay</li>
+                    <li>✔ Random move generation</li>
+                    <li>✔ Score tracking</li>
+                    <li>✔ Interactive UI</li>
+                    <li>✔ Simple & fun logic</li>
+                </ul>
+
+                <!-- BUTTONS -->
+                <div class="project-buttons">
+                    <!-- <a href="https://rock-paper-scissors-bvae.onrender.com" class="btn primary">Live Demo</a> -->
+                    <a href="https://rock-paper-scissors-nine-murex.vercel.app/" class="btn primary">Live Demo</a>
+                    <a href="https://github.com/TejaswiniDeveloper/Rock-Paper-Scissors" class="btn secondary">GitHub</a>
+                </div>
+
+                <!-- TECH STACK -->
+                <div class="tech-stack">
+                    <span><i class="fa-brands fa-html5"></i> HTML</span>
+                    <span><i class="fa-brands fa-css3-alt"></i> CSS</span>
+                    <span><i class="fa-brands fa-js"></i> JavaScript</span>
+                </div>
+            </div>
+        </div>  
+    </div>      
+
+</body>
+</html>
